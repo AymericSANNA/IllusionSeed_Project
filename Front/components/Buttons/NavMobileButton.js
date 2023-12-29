@@ -1,10 +1,19 @@
+import Image from 'next/image'
 import React from 'react'
 
-function NavMobileButton() {
+function NavMobileButton(name,url) {
     return (
-        <div>
-            
-        </div>
+
+        <li>
+            <a href={url}>
+                <Image 
+                    src={name}
+                    width={70} 
+                    height={70} 
+                    alt="Social Network Logo" />
+            </a>
+        </li>
+
     )
 }
 
