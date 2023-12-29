@@ -6,8 +6,7 @@ export default function Home() {
     <main className={styles.main}> 
 
       <div className={styles.center}>
-        <p
-        > IllusionSeed </p>
+        <p> IllusionSeed </p>
       </div>
     </main>
   )

@@ -1,3 +1,7 @@
+import SocialButton from "../../components/Buttons/SocialButton"
+import TikTok from "./Images/logo_tiktok.png"
+import Instagram from "./Images/logo_instagram.png"
+import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
@@ -15,10 +19,10 @@ export default function RootLayout({ children }) {
       
         <nav>
           <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a href="/about">About IllusionSeed</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/Home">Home</a></li>
+            <li><a href="/About">About IllusionSeed</a></li>
+            <li><a href="/Gallery">Gallery</a></li>
+            <li><a href="/Contact">Contact</a></li>
           </ul>
         </nav>
 
@@ -27,8 +31,8 @@ export default function RootLayout({ children }) {
       <footer>
         <p>IllusionSeed</p>
         <ul>
-          <li><image src="" alt="Tik-tok logo"><a href=""></a></image></li>
-          <li><image src="" alt="Instagram logo"><a href=""></a></image></li>
+          {SocialButton(TikTok)}
+          {SocialButton(Instagram)}
         </ul>
         <nav>
           <ul>
