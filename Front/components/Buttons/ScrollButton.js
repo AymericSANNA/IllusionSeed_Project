@@ -1,10 +1,13 @@
 import React from 'react'
+import Image from 'next/image'
 
-function ScrollButton() {
+function ScrollButton(name) {
     return (
-        <div>
-            
-        </div>
+        <Image 
+                    src={name}
+                    width={70} 
+                    height={70} 
+                    alt="Menu Logo" />
     )
 }
 

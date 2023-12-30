@@ -10,7 +10,7 @@ function NavMobileButton(name,url) {
                     src={name}
                     width={70} 
                     height={70} 
-                    alt="Social Network Logo" />
+                    alt="Menu Logo" />
             </a>
         </li>
 
