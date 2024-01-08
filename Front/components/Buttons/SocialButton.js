@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-function SocialButton(name,url) {
+function SocialButton(name, url, altImage) {
     return (
         <li>
             <a href={url}>
@@ -9,7 +9,7 @@ function SocialButton(name,url) {
                     src={name}
                     width={70} 
                     height={70} 
-                    alt="Social Network Logo" />
+                    alt={altImage} /> 
             </a>
         </li>
     )

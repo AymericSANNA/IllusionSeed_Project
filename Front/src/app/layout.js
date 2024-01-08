@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
       <footer>
         <p>IllusionSeed</p>
         <ul>
-          {SocialButton(TikTok,"https://www.tiktok.com/@illusionseed")}
+          {SocialButton(TikTok,"https://www.tiktok.com/@illusionseed","Tiktok logo")}
           {SocialButton(Instagram,"https://www.instagram.com/illusion__seed/?hl=fr")}
           {SocialButton(Threads,"https://www.threads.net/@illusion__seed")}
         </ul>
