@@ -22,26 +22,28 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
       
-        <nav>
-          <ul>
-            {NavMobileButton(Home,"/Home")}
-            {NavMobileButton(IllusionSeedLogo,"/About")}
-            {NavMobileButton(Gallery,"/Gallery")}
-            {NavMobileButton(Contact,"/Contact")}
-          </ul>
-        </nav>
+        <header className="menu-container">
+          <nav className="menu-nav">
+            <ul className="menu-nav-container">
+              {NavMobileButton(Home,"/Home")}
+              {NavMobileButton(IllusionSeedLogo,"/About")}
+              {NavMobileButton(Gallery,"/Gallery")}
+              {NavMobileButton(Contact,"/Contact")}
+            </ul>
+          </nav>
+        </header>
 
       {children}
       
       <footer>
-        <p>IllusionSeed</p>
-        <ul>
+        <p className="footer-IllusionSeed-title">IllusionSeed</p>
+        <ul className="footer-social-button-list">
           {SocialButton(TikTok,"https://www.tiktok.com/@illusionseed","Tiktok logo")}
           {SocialButton(Instagram,"https://www.instagram.com/illusion__seed/?hl=fr")}
           {SocialButton(Threads,"https://www.threads.net/@illusion__seed")}
         </ul>
-        <nav>
-          <ul>
+        <nav className="footer-nav">
+          <ul className="footer-nav-sitemap">
             <li><a href="/home">Home</a></li>
             <li><a href="/about">About IllusionSeed</a></li>
             <li><a href="/gallery">Gallery</a></li>

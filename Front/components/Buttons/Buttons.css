@@ -1,0 +1,179 @@
+/*-------------------------------  BUTTON CSS  -----------------------
+--------------------------------------------------------------------*/
+
+/*-------------------------------  NAV_DESKTOP_BUTTON CSS  -----------
+--------------------------------------------------------------------*/
+
+/*-------------------------------  NAV_MOBILE_BUTTON CSS  ------------
+--------------------------------------------------------------------*/
+.menu-button{
+    color: #fff;
+    font-weight: 700;
+    list-style-type: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 150px;
+    background: #222222;
+    box-shadow:  8px 8px 16px #101010,
+                -8px -8px 16px #363636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.menu-button:hover{
+    width: 200px;
+    justify-content: start;
+    padding-left: 15px;
+}
+
+.menu-button:nth-child(2):hover{
+    width: 215px;
+    padding-left: 0px;
+    
+}
+
+.menu-button:nth-child(1):hover::after{
+    margin-left: 40px;
+    content: "HOME";
+}
+
+.menu-button:nth-child(2):hover::after{
+    margin-left: 30px;
+    content: "ABOUT";
+}
+
+.menu-button:nth-child(3):hover::after{
+    margin-left: 40px;
+    content: "GALLERY";
+}
+
+.menu-button:nth-child(4):hover::after{
+    margin-left: 40px;
+    content: "CONTACT";
+}
+
+.menu-button-logo{
+    width: 30px;
+    height: 30px;
+    background: #222222;
+    text-align: center;
+    }
+
+body > header > nav > ul > li:nth-child(2) > a > img{
+    margin-top: 5px;
+    margin-left: 2px;
+    width: 55px;
+    height: 55px;
+    border-radius: 150px;
+}
+
+body > header > nav > ul > li:nth-child(3) > a > img{
+    width: 40px;
+}
+
+body > header > nav > ul > li:nth-child(4) > a > img{
+    margin-top: 2px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+}
+
+/*-------------------------------  SOCIAL_BUTTON CSS  ----------------
+--------------------------------------------------------------------*/
+
+
+
+/*-------------------------------  SCREEN SIZE = 460 PX ------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+
+@media screen and (min-width:460px) {
+/*-------------------------------  BUTTON CSS  -----------------------
+--------------------------------------------------------------------*/
+
+/*-------------------------------  NAV_DESKTOP_BUTTON CSS  -----------
+--------------------------------------------------------------------*/
+
+/*-------------------------------  NAV_MOBILE_BUTTON CSS  ------------
+--------------------------------------------------------------------*/
+
+.menu-button{
+    color: #fff;
+    font-weight: 700;
+    list-style-type: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 150px;
+    background: #222222;
+    box-shadow:  8px 8px 16px #101010,
+                -8px -8px 16px #363636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.menu-button:hover{
+    width: 200px;
+    justify-content: start;
+    padding-left: 15px;
+}
+
+.menu-button:nth-child(2):hover{
+    width: 215px;
+    padding-left: 0px;
+    
+}
+
+.menu-button:nth-child(1):hover::after{
+    margin-left: 40px;
+    content: "HOME";
+}
+
+.menu-button:nth-child(2):hover::after{
+    margin-left: 30px;
+    content: "ABOUT";
+}
+
+.menu-button:nth-child(3):hover::after{
+    margin-left: 40px;
+    content: "GALLERY";
+}
+
+.menu-button:nth-child(4):hover::after{
+    margin-left: 40px;
+    content: "CONTACT";
+}
+
+.menu-button-logo{
+    width: 50px;
+    height: 50px;
+    background: #222222;
+    text-align: center;
+    }
+
+body > header > nav > ul > li:nth-child(2) > a > img{
+    margin-top: 5px;
+    margin-left: 2px;
+    width: 75px;
+    height: 75px;
+    border-radius: 150px;
+}
+
+body > header > nav > ul > li:nth-child(3) > a > img{
+    width: 60px;
+}
+
+body > header > nav > ul > li:nth-child(4) > a > img{
+    margin-top: 3px;
+    margin-left: 1px;
+    width: 60px;
+    height: 60px;
+}
+
+/*-------------------------------  SOCIAL_BUTTON CSS  ----------------
+--------------------------------------------------------------------*/
+}
