@@ -1,3 +1,12 @@
+import SocialButton from "../../components/Buttons/SocialButton"
+import NavMobileButton from "../../components/Buttons/NavMobileButton"
+import Home from "./Images/logo_home.png"
+import Gallery from "./Images/logo_gallery.png"
+import Contact from "./Images/logo_contact.png"
+import IllusionSeedLogo from "./Images/Logo.png"
+import TikTok from "./Images/logo_tiktok.png"
+import Instagram from "./Images/logo_instagram.png"
+import Threads from "./Images/logo_threads.png"
 import { Inter } from 'next/font/google'
 import './globals.css'
 
@@ -15,10 +24,10 @@ export default function RootLayout({ children }) {
       
         <nav>
           <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a href="/about">About IllusionSeed</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/contact">Contact</a></li>
+            {NavMobileButton(Home,"/Home")}
+            {NavMobileButton(IllusionSeedLogo,"/About")}
+            {NavMobileButton(Gallery,"/Gallery")}
+            {NavMobileButton(Contact,"/Contact")}
           </ul>
         </nav>
 
@@ -27,8 +36,9 @@ export default function RootLayout({ children }) {
       <footer>
         <p>IllusionSeed</p>
         <ul>
-          <li><image src="" alt="Tik-tok logo"><a href=""></a></image></li>
-          <li><image src="" alt="Instagram logo"><a href=""></a></image></li>
+          {SocialButton(TikTok,"https://www.tiktok.com/@illusionseed","Tiktok logo")}
+          {SocialButton(Instagram,"https://www.instagram.com/illusion__seed/?hl=fr")}
+          {SocialButton(Threads,"https://www.threads.net/@illusion__seed")}
         </ul>
         <nav>
           <ul>
