@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
 
       {children}
       
-      <footer>
+      <footer className="footer-container">
         <p className="footer-IllusionSeed-title">IllusionSeed</p>
         <ul className="footer-social-button-list">
           {SocialButton(TikTok,"https://www.tiktok.com/@illusionseed","Tiktok logo")}

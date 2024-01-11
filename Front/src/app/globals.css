@@ -3,6 +3,7 @@
 
 html{
   background-color: #222222;
+  margin: 13%;
 }
 
 /*-------------------------------  HEADER CSS  -----------------------
@@ -47,3 +48,33 @@ html{
 
 /*-------------------------------  FOOTER CSS  -----------------------
 --------------------------------------------------------------------*/
+
+.footer-container{
+  background-color: #222222;
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  background: linear-gradient(145deg, #1f1f1f, #242424);
+  box-shadow:  31px 31px 62px #171717,
+             -31px -31px 62px #2d2d2d;
+
+}
+
+.footer-social-button-list{
+  padding: 0;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
