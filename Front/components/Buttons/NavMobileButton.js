@@ -4,17 +4,16 @@ import './Buttons.css'
 
 function NavMobileButton(name,url) {
     return (
-
-        <li className='menu-button'>
-            <a href={url}>
+        <a href={url}>
+            <li className='menu-button'>
                 <Image 
                     className='menu-button-logo'
                     src={name}
                     width={70} 
                     height={70} 
                     alt="Menu Logo" />
-            </a>
-        </li>
+            </li>
+        </a>
 
     )
 }

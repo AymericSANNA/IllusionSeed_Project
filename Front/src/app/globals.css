@@ -22,6 +22,11 @@ html{
   z-index: 100;
   flex-wrap: wrap;
   flex-direction: row;
+
+
+  background: linear-gradient(145deg, #1f1f1f, #242424);
+  box-shadow:  31px 31px 62px #171717,
+             -31px -31px 62px #2d2d2d;
 }
 
 .menu-nav{
