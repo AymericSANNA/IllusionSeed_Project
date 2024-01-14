@@ -98,6 +98,11 @@ body > header > nav > ul > li:nth-child(4) > a > img{
     margin: 10px;
 }
 
+.footer-social-button:nth-child(1):hover{
+    box-shadow:0 0 30px 5px #26d2fd,
+    inset 0 0 100px 50px #26d2fd;
+}
+
 .footer-social-button:nth-child(1):hover::after{
     content: "TIKTOK";
     position: fixed;
@@ -119,6 +124,11 @@ body > header > nav > ul > li:nth-child(4) > a > img{
     left: 296px;
 }
 
+.footer-social-button:nth-child(2):hover{
+    box-shadow:0 0 30px 5px #f72b8a,
+    inset 0 0 1px 2px #f72b8a;
+}
+
 .footer-social-button:nth-child(2):hover::after{
     content: "INSTAGRAM";
     position: fixed;
@@ -138,6 +148,11 @@ body > header > nav > ul > li:nth-child(4) > a > img{
     position: fixed;
     bottom: 90px;
     left: 350px;
+}
+
+.footer-social-button:nth-child(3):hover{
+    box-shadow:0 0 30px 5px #81f811,
+    inset 0 0 1px 2px #81f811;
 }
 
 .footer-social-button:nth-child(3):hover::after{
@@ -172,18 +187,11 @@ body > header > nav > ul > li:nth-child(4) > a > img{
 .footer-social-button:nth-child(3) > li > img,
 .footer-social-button:nth-child(2) > li > img{
     margin-top: 5px;
-    margin-left: 2px;
     width: 45px;
     height: 45px;
     border-radius: 150px;
     overflow: hidden;
 }
-
-.footer-social-button:nth-child(2) > li > img{
-    width: 40px;
-    height: 40px;
-}
-
 
 /*-------------------------------  SCREEN SIZE = 460 PX ------------------------
 --------------------------------------------------------------------------------
