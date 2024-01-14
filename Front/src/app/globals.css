@@ -10,7 +10,7 @@ html{
 --------------------------------------------------------------------*/
 
 .menu-container{
-  background-color: #222222;
+  background: linear-gradient(145deg, #131313, #000000);
   height: 100px;
   width: 100%;
   margin: auto;
@@ -23,11 +23,6 @@ html{
   z-index: 100;
   flex-wrap: wrap;
   flex-direction: row;
-
-
-  background: linear-gradient(145deg, #1f1f1f, #242424);
-  box-shadow:  31px 31px 62px #171717,
-             -31px -31px 62px #2d2d2d;
 }
 
 .menu-nav{
@@ -50,7 +45,7 @@ html{
 --------------------------------------------------------------------*/
 
 .footer-container{
-  background-color: #222222;
+  background: linear-gradient(145deg, #131313, #000000);
   height: 100px;
   width: 100%;
   margin: auto;
@@ -63,11 +58,16 @@ html{
   z-index: 100;
   flex-wrap: wrap;
   flex-direction: row;
+}
 
-  background: linear-gradient(145deg, #1f1f1f, #242424);
-  box-shadow:  31px 31px 62px #171717,
-             -31px -31px 62px #2d2d2d;
-
+.footer-IllusionSeed-title{
+  position: fixed;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color:linear-gradient(145deg, #131313, #141414);;
+  text-align: center;
+  left: 30px;
+  bottom: 49px;
 }
 
 .footer-social-button-list{
