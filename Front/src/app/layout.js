@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
       {children}
       
       <footer className="footer-container">
-        <p className="footer-IllusionSeed-title">IllusionSeed</p>
+        <p className="footer-IllusionSeed-title"><a href="/">IllusionSeed</a></p>
         <ul className="footer-social-button-list">
           {SocialButton(TikTok,"https://www.tiktok.com/@illusionseed","Tiktok logo")}
           {SocialButton(Instagram,"https://www.instagram.com/illusion__seed/?hl=fr")}
@@ -44,11 +44,11 @@ export default function RootLayout({ children }) {
         </ul>
         <nav className="footer-nav">
           <ul className="footer-nav-sitemap">
-            <li><a href="/home">Home</a></li>
-            <li><a href="/about">About IllusionSeed</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/sitemap">Sitemap</a></li>
+            <li><a href="/Home">Home</a></li>
+            <li><a href="/About">About</a></li>
+            <li><a href="/Gallery">Gallery</a></li>
+            <li><a href="/Contact">Contact</a></li>
+            <li><a href="/Sitemap">Sitemap</a></li>
           </ul>
         </nav>
       </footer>

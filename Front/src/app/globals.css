@@ -50,7 +50,7 @@ html{
   width: 100%;
   margin: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   left: 0;
@@ -61,18 +61,37 @@ html{
 }
 
 .footer-IllusionSeed-title{
+  z-index: 100;
   position: fixed;
   font-size: 2.5rem;
-  font-weight: 500;
-  color:linear-gradient(145deg, #131313, #141414);;
+  font-weight: 600;
   text-align: center;
-  left: 30px;
+  left: 50px;
   bottom: 49px;
+}
+
+.footer-IllusionSeed-title > a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-IllusionSeed-title > a:hover{
+  text-shadow: 0 0 30px #89ffff;
+  -webkit-text-stroke: 0.5px #89ffff; 
+}
+
+.footer-IllusionSeed-title > a:hover::before{
+  text-shadow: 0 0 10px #89ffff;
+  position: fixed;
+  content: "IllusionSeed";
+  left: 50px;
+  bottom: 89px;
 }
 
 .footer-social-button-list{
   padding: 0;
   margin-bottom: 50px;
+  margin-left: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
