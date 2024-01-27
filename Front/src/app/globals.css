@@ -4,41 +4,12 @@
 html{
   background-color: #222222;
   margin: 13%;
+  
 }
 
 /*-------------------------------  HEADER CSS  -----------------------
 --------------------------------------------------------------------*/
 
-.menu-container{
-  background: linear-gradient(145deg, #131313, #000000);
-  height: 100px;
-  width: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.menu-nav{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu-nav-container{
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
 
 
 /*-------------------------------  FOOTER CSS  -----------------------
@@ -78,6 +49,7 @@ html{
 .footer-IllusionSeed-title > a:hover{
   text-shadow: 0 0 30px #89ffff;
   -webkit-text-stroke: 0.5px #89ffff; 
+  transition: 1s cubic-bezier(1, 0.05, 0.65, 1);
 }
 
 .footer-IllusionSeed-title > a:hover::before{
@@ -86,6 +58,7 @@ html{
   content: "IllusionSeed";
   left: 50px;
   bottom: 89px;
+  transition: 1s cubic-bezier(0.075, 1, 0.065, 1);
 }
 
 .footer-social-button-list{
