@@ -30,9 +30,16 @@
 	cursor: pointer;
 }
 
+.open-main-nav:hover{
+	text-shadow: 0 0 30px #89ffff;
+	-webkit-text-stroke: 0.7px #78ffff;
+}
+
 .open-main-nav.is-open{
 	transform: translateX(70vw);
-	transition: all 275ms 100ms
+	transition: all 275ms 100ms;
+	text-shadow: 0 0 30px #89ffff;
+	-webkit-text-stroke: 0.7px #78ffff;
 }
 
 .open-main-nav:focus {
@@ -116,7 +123,7 @@
     visibility: visible;
 }
 
-/* Yellow band effect */
+/* Menu band effect */
 .main-nav::before {
 	 content: '';
     position: absolute;
@@ -138,7 +145,7 @@
 .main-nav ul {
     display: inline-flex;
     flex-direction: column;
-    height: 93%; /* Should be 100%, but we have a notice message :D */
+    height: 100%;
     align-items: flex-end;
     justify-content: center;
     transform: translateX(-18%) skew(-16deg);
@@ -173,8 +180,13 @@
 .main-nav li:nth-child(4) a {
 	transition: all 275ms 325ms
 }
-.main-nav li:nth-child(5) a {
+/* .main-nav li:nth-child(5) a {
 	transition: all 275ms 375ms
+} */
+
+.main-nav.is-open a:hover {
+	text-shadow: 0 0 30px #89ffff;
+  -webkit-text-stroke: 0.7px #4affff;
 }
 
 /* Decoration */

@@ -1,7 +1,7 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import Menu from "../Menu/Menu";
-import "./menu.css"
+import Link from 'next/link';
+import React, { useState } from "react";
+import "./header.css"
 
 
 function Header() {
@@ -19,7 +19,36 @@ function Header() {
             <span className="burger-text">Menu</span>
           </button>
           <nav className={enableMobileMenu ? "main-nav is-open" : "main-nav"} id="main-nav">
-          {enableMobileMenu && <Menu />}
+  
+          <div>
+            <ul>
+              <li>
+                <Link 
+                href="/Home"
+                onClick={()=>{setEnableMenu(!enableMobileMenu)}}
+                >Home</Link>
+              </li>
+              <li>
+                <Link 
+                href="/About"
+                onClick={()=>{setEnableMenu(!enableMobileMenu)}}
+                >About me</Link>
+              </li>
+              <li>
+                <Link 
+                href="/Gallery"
+                onClick={()=>{setEnableMenu(!enableMobileMenu)}}
+                >Gallery</Link>
+              </li>
+              <li>
+                <Link 
+                href="/Contact"
+                onClick={()=>{setEnableMenu(!enableMobileMenu)}}
+                >Contact</Link>
+              </li>
+            </ul>
+         
+        </div>
           </nav>
         </div>
 
