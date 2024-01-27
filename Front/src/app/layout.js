@@ -1,10 +1,5 @@
 import SocialButton from "../../components/Buttons/SocialButton";
 import Header from "../../components/Header/Header";
-import NavMobileButton from "../../components/Buttons/NavMobileButton";
-import Home from "./Images/logo_home.png";
-import Gallery from "./Images/logo_gallery.png";
-import Contact from "./Images/logo_contact.png";
-import IllusionSeedLogo from "./Images/Logo.png";
 import TikTok from "./Images/logo_tiktok.png";
 import Instagram from "./Images/logo_instagram.png";
 import Threads from "./Images/logo_threads.png";
@@ -25,17 +20,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-
-        {/* <header className="menu-container">
-          <nav className="menu-nav">
-            <ul className="menu-nav-container">
-              {NavMobileButton(Home,"/Home")}
-              {NavMobileButton(IllusionSeedLogo,"/About")}
-              {NavMobileButton(Gallery,"/Gallery")}
-              {NavMobileButton(Contact,"/Contact")}
-            </ul>
-          </nav>
-        </header> */}
 
         {children}
 

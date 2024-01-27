@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import './Buttons.css'
 
 function SocialButton(name, url, altImage) {
     return (
