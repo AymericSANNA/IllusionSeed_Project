@@ -74,7 +74,7 @@ html{
 .footer-IllusionSeed-title > a:hover::before{
   text-shadow: 0 0 10px #89ffff;
   position: fixed;
-  content: "IllusionSeed";
+  content: "HappySoul Illustrate";
   left: 50px;
   bottom: 89px;
   transition: 1s cubic-bezier(0.075, 1, 0.065, 1);

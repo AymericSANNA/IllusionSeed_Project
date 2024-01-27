@@ -19,6 +19,29 @@
 	flex-direction: row;
 }  
 
+.main-title{
+	z-index: 100;
+	position: fixed;
+	font-size: 2.5rem;
+	font-weight: 600;
+	text-align: center;
+	color: #ffffff;
+	left: 42vw;
+}
+.main-title>a{
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: 0 0 30px #89ffff,
+	0 0 10px #89ffff;;
+  	-webkit-text-stroke: 0.5px #89ffff;
+}
+
+.main-title-separate{
+	position: fixed;
+	top: 70px;
+	left: 44vw;
+}
+
 .open-main-nav {
 	position: absolute;
 	top: 30px;

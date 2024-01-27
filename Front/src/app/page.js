@@ -8,7 +8,7 @@ export default function Home() {
 
       <div className={styles.center}>
 
-        <p> IllusionSeed </p>
+        <p> HappySoul Illustrate </p>
       </div>
     </main>
   )

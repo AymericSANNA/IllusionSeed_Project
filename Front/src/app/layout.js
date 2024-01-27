@@ -19,13 +19,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+
         <Header />
 
         {children}
 
         <footer className="footer-container">
           <p className="footer-IllusionSeed-title">
-            <a href="/">IllusionSeed</a>
+            <a href="/">HappySoul Illustrate</a>
           </p>
           <ul className="footer-social-button-list">
             {SocialButton(

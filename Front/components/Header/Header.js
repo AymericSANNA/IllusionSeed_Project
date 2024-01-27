@@ -10,6 +10,9 @@ function Header() {
   return (
 
         <div className="menu-container">
+          
+            <h1 className='main-title'><Link href="/">HappySoul <span className='main-title-separate'>Illustrate</span></Link></h1>
+       
             <button
                 id="burger"
                 className={enableMobileMenu ? "open-main-nav is-open" : "open-main-nav"}
