@@ -1,0 +1,62 @@
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    animation: 1s ease-in both;
+    animation-timeline: view();
+    animation-range: entry;
+    animation-name: blurFadeIn;
+    margin-bottom: 50px;
+}
+
+@keyframes blurFadeIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+        filter: blur(3px);
+    }
+
+    80% {
+        transform: scale(1);
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.card-image{
+    width: auto;
+    height: 700px;
+    overflow: hidden;
+    
+    border-radius: 50px;
+}
+
+.card-text-container{
+    width: 80%;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    
+    bottom: 30px;
+    border-radius: 15px;
+}
+
+.card-title{
+
+margin-left: 15% ;
+}
+
+.card-description{
+width: 60%;
+margin: auto;
+margin-left: 17%;
+margin-bottom: 30px;
+}

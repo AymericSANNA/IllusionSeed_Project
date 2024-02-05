@@ -1,0 +1,10 @@
+.slider-container{
+    margin: auto;
+}
+
+.slider-images-container{
+    margin: auto;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(25.25rem), 1fr));
+    grid-gap: 1rem; */
+}
