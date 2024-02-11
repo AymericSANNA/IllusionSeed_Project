@@ -1,73 +1,3 @@
-/*-------------------------------  BUTTON CSS  -----------------------
---------------------------------------------------------------------*/
-
-/*-------------------------------  NAV_DESKTOP_BUTTON CSS  -----------
---------------------------------------------------------------------*/
-
-/*-------------------------------  NAV_MOBILE_BUTTON CSS  ------------
---------------------------------------------------------------------*/
-.menu-button{
-    color: #fff;
-    font-weight: 700;
-    list-style-type: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 150px;
-    background: #222222;
-    box-shadow:  5px 5px 10px #101010,
-                -5px -5px 10px #363636;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}
-
-.menu-button:hover{
-
-}
-
-.menu-button:nth-child(2):hover{
-
-}
-
-.menu-button:nth-child(1):hover::after{
-
-}
-
-.menu-button:nth-child(2):hover::after{
-
-}
-
-.menu-button:nth-child(3):hover::after{
- 
-}
-
-.menu-button:nth-child(4):hover::after{
-
-}
-
-.menu-button-logo{
-
-}
-
-body > header > nav > ul > li:nth-child(2) > a > img{
-    margin-top: 5px;
-    margin-left: 2px;
-    width: 55px;
-    height: 55px;
-    border-radius: 150px;
-}
-
-body > header > nav > ul > li:nth-child(3) > a > img{
-    width: 30px;
-}
-
-body > header > nav > ul > li:nth-child(4) > a > img{
-    margin-top: 2px;
-    margin-left: 1px;
-    width: 30px;
-    height: 30px;
-}
 
 /*-------------------------------  SOCIAL_BUTTON CSS  ----------------
 --------------------------------------------------------------------*/
@@ -75,22 +5,16 @@ body > header > nav > ul > li:nth-child(4) > a > img{
     color: #fff;
     font-weight: 700;
     list-style-type: none;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 150px;
     background: #222222;
     box-shadow:  5px 5px 10px #101010,
                 -5px -5px 10px #363636;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin: 10px;
-}
-
-.footer-social-button-list{
-   position: fixed;
-   left: 70px;
-   bottom: -40px;
+  
 }
 
 .footer-social-button:nth-child(1):hover{
@@ -98,51 +22,9 @@ body > header > nav > ul > li:nth-child(4) > a > img{
     inset 0 0 100px 50px #26d2fd;
 }
 
-.footer-social-button:nth-child(1):hover::after{
-    content: "TIKTOK";
-    position: fixed;
-    bottom: 75px;
-    left: 11vw;
-    filter: blur(5px);
-    opacity: 0.8;
-    background: radial-gradient(#7ee5ff,#26d2fd);
-    text-shadow: 0 0 10px #ffffff;
-    box-shadow: 0 0 30px 10px #26d2fd;
-}
-
-.footer-social-button:nth-child(1):hover::before{
-    z-index: 100;
-    content: "TIKTOK";
-    position: fixed;
-    font-weight: 500;
-    bottom: 75px;
-    left: 11vw;
-}
-
 .footer-social-button:nth-child(2):hover{
     box-shadow:0 0 30px 5px #f72b8a,
     inset 0 0 1px 2px #f72b8a;
-}
-
-.footer-social-button:nth-child(2):hover::after{
-    content: "INSTAGRAM";
-    position: fixed;
-    bottom: 75px;
-    left: 15vw;
-    filter: blur(5px);
-    opacity: 0.8;
-    background: radial-gradient( #ff7eba, #f72b8a);
-    text-shadow: 0 0 10px #ffffff;
-    box-shadow: 0 0 30px 10px #f72b8a;
-}
-
-.footer-social-button:nth-child(2):hover::before{
-    z-index: 100;
-    content: "INSTAGRAM";
-    font-weight: 500;
-    position: fixed;
-    bottom: 75px;
-    left: 15vw;
 }
 
 .footer-social-button:nth-child(3):hover{
@@ -150,71 +32,18 @@ body > header > nav > ul > li:nth-child(4) > a > img{
     inset 0 0 1px 2px #81f811;
 }
 
-.footer-social-button:nth-child(3):hover::after{
-    content: "THREADS";
-    position: fixed;
-    bottom: 75px;
-    left: 21.2vw;
-    filter: blur(5px);
-    opacity: 0.8;
-    background: radial-gradient( #bcff7e, #81f811);
-    text-shadow: 0 0 10px #ffffff;
-    box-shadow: 0 0 30px 5px #81f811;
-}
-
-.footer-social-button:nth-child(3):hover::before{
-    z-index: 100;
-    content: "THREADS";
-    font-weight: 500;
-    position: fixed;
-    bottom: 75px;
-    left: 21.2vw;
-}
-
 .footer-social-button-logo{
-    width: 25px;
-    height: 25px;
     background: #222222;
-    text-align: center;
 }
 
 .footer-social-button:nth-child(1) > li > img,
-.footer-social-button:nth-child(3) > li > img,
-.footer-social-button:nth-child(2) > li > img{
-    margin-top: 5px;
-    width: 45px;
-    height: 45px;
+.footer-social-button:nth-child(2) > li > img,
+.footer-social-button:nth-child(3) > li > img{
+    margin-top: 2px;
+    width: 35px;
+    height: 35px;
     border-radius: 150px;
     overflow: hidden;
-}
-
-/*-------------------------------  FOOTER NAV LIST CSS  -----------------------
---------------------------------------------------------------------*/
-
-.footer-nav{
-    position: fixed;
-    height: 50px;
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 5%;
-    margin-bottom: 40px;
-    bottom: -10px;
-    right: 20px;
-
-}
-
-.footer-nav-sitemap{
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-}
-
-.footer-nav-sitemap > li > a {
-    margin: 15px 10px 15px;
-    text-decoration: none;
-    color: #fff;
 }
 
 /*-------------------------------  SCREEN SIZE = 460 PX ------------------------
@@ -223,120 +52,139 @@ body > header > nav > ul > li:nth-child(4) > a > img{
 ------------------------------------------------------------------------------*/
 
 @media screen and (min-width:460px) {
-/*-------------------------------  BUTTON CSS  -----------------------
---------------------------------------------------------------------*/
 
-/*-------------------------------  NAV_DESKTOP_BUTTON CSS  -----------
---------------------------------------------------------------------*/
+    /*-------------------------------  SOCIAL_BUTTON CSS  ----------------
+    --------------------------------------------------------------------*/
 
-/*-------------------------------  NAV_MOBILE_BUTTON CSS  ------------
---------------------------------------------------------------------*/
-
-.menu-button{
-    color: #fff;
-    font-weight: 700;
-    list-style-type: none;
-    text-decoration: none;
-    width: 70px;
-    height: 70px;
-    border-radius: 150px;
-    background: #222222;
-    box-shadow:  5px 5px 10px #101010,
-                -5px -5px 10px #363636;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 10px;
-    margin-right: 25px;
-   
-}
-
-.menu-button:hover{
-  
-}
-
-.menu-button:nth-child(2):hover{
-
-}
-
-.menu-button:nth-child(1):hover::after{
-
-}
-
-.menu-button:nth-child(2):hover::after{
-
-}
-
-.menu-button:nth-child(3):hover::after{
-
-}
-
-.menu-button:nth-child(4):hover::after{
-
-}
-
-.menu-button-logo{
-    width: 40px;
-    height: 40px;
-    background: #222222;
-    text-align: center;
+    .footer-social-button{
+        width: 35px;
+        height: 35px;
+        margin-bottom: 20px;
     }
 
-body > header > nav > ul > a:nth-child(2) > li > img{
-    margin-top: 5px;
-    margin-left: 2px;
-    width: 60px;
-    height: 60px;
-    border-radius: 150px;
+    .footer-social-button-list{
+    position: fixed;
+    left: 70px;
+    bottom: -40px;
+    }
+
+    .footer-social-button-logo{
+        width: 25px;
+        height: 25px;
+        background: #222222;
+        text-align: center;
+    }
+
+    .footer-social-button:nth-child(1) > li > img,
+    .footer-social-button:nth-child(3) > li > img,
+    .footer-social-button:nth-child(2) > li > img{
+        margin-top: 5px;
+        width: 35px;
+        height: 35px;
+        border-radius: 150px;
+        overflow: hidden;
+    }
 }
 
-body > header > nav > ul > a:nth-child(3) > li > img{
-    width: 50px;
-}
+/*-------------------------------  SCREEN SIZE = 600 PX ------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
 
-body > header > nav > ul > a:nth-child(4) > li > img{
-    margin-top: 3px;
-    margin-left: 1px;
-    width: 50px;
-    height: 50px;
-}
+@media screen and (min-width:600px) {
 
-/*-------------------------------  SOCIAL_BUTTON CSS  ----------------
---------------------------------------------------------------------*/
-
-.footer-social-button{
-    color: #fff;
-    font-weight: 700;
-    list-style-type: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 150px;
-    background: #222222;
-    box-shadow:  5px 5px 10px #101010,
-                -5px -5px 10px #363636;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}
-
-.footer-social-button:hover{
-    /* justify-content: start; */
-}
-
-.footer-social-button:nth-child(2):hover{
+    /*-------------------------------  SOCIAL_BUTTON CSS  ----------------
+    --------------------------------------------------------------------*/
     
-}
+    .footer-social-button-list{
+        position: fixed;
+        left: 70px;
+        bottom: -50px;
+        justify-content: flex-start;
+    }
 
-.footer-social-button:nth-child(1):hover::after{
-    content: "TIKTOK";
-}
+    .footer-social-button{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: -5px;
+    }
 
-.footer-social-button:nth-child(2):hover::after{
-    content: "INSTAGRAM";
-}
+    .footer-social-button:nth-child(1){
+        left: 100px;
+    }
 
-.footer-social-button:nth-child(3):hover::after{
-    content: "THREADS";
-}
+    .footer-social-button:nth-child(2){
+        left: 200px;
+    }
+
+    .footer-social-button:nth-child(3){
+        left: 300px;
+    }
+
+    .footer-social-button:hover::before,
+    .footer-social-button:hover::after{
+        position: fixed;
+        bottom: 70px;
+    }
+    .footer-social-button:hover::before{
+        z-index: 100;
+        font-weight: 500;
+    }
+
+    .footer-social-button:hover::after{
+        filter: blur(5px);
+        opacity: 0.8;
+        text-shadow: 0 0 10px #ffffff;
+    }
+
+    .footer-social-button:nth-child(1):hover::before,
+    .footer-social-button:nth-child(1):hover::after{
+        content: "TIKTOK";
+        left: 100px;
+    }
+
+    .footer-social-button:nth-child(1):hover::after{
+        background: radial-gradient(#7ee5ff,#26d2fd);
+        box-shadow: 0 0 30px 10px #26d2fd;
+    }
+    
+    .footer-social-button:nth-child(2):hover::before,
+    .footer-social-button:nth-child(2):hover::after{
+        content: "INSTAGRAM";
+        left: 182px;
+    }
+    
+    .footer-social-button:nth-child(2):hover::after{
+        background: radial-gradient( #ff7eba, #f72b8a);
+        box-shadow: 0 0 30px 10px #f72b8a;
+    }
+
+    .footer-social-button:nth-child(3):hover::before,
+    .footer-social-button:nth-child(3):hover::after{
+        content: "THREADS";
+        left: 290px;
+    }
+    
+    .footer-social-button:nth-child(3):hover::after{
+        background: radial-gradient( #bcff7e, #81f811);
+        box-shadow: 0 0 30px 5px #81f811;
+    }
+
+    .footer-social-button-logo{
+        width: 35px;
+        height: 35px;
+        background: #222222;
+        text-align: center;
+    }
+    
+    .footer-social-button:nth-child(1) > li > img,
+    .footer-social-button:nth-child(3) > li > img,
+    .footer-social-button:nth-child(2) > li > img{
+        margin-top: 5px;
+        width: 45px;
+        height: 45px;
+        border-radius: 150px;
+        overflow: hidden;
+    }
 }

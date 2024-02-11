@@ -1,5 +1,138 @@
 
 .footer-container{
+  height: 80px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background: linear-gradient(145deg, #131313, #000000);
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+  
+/* ------------------------- FOOTER TITLE CSS -----------------------------*/
+
+.footer-IllusionSeed-title{
+  z-index: 100;
+  position: fixed;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  left: 11vw;
+  bottom: 50px;
+}
+
+.footer-IllusionSeed-title > a {
+  text-decoration: none;
+  color: #000000;
+}
+  
+.footer-IllusionSeed-title > a:hover{
+  text-shadow: 0 0 30px #89ffff;
+  -webkit-text-stroke: 0.5px #89ffff; 
+  transition: 1s cubic-bezier(1, 0.05, 0.65, 1);
+}
+  
+
+/* ------------------------------- FOOTER BUTTON CONTAINER -------------------*/
+  
+.footer-social-button-list{
+  width: 100%;
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*-------------------------------  FOOTER NAV LIST CSS  -----------------------
+--------------------------------------------------------------------*/
+
+.footer-nav{
+  display: none;
+}
+
+/* ------------------------- MEDIA SCREEN 330 PX -------------------------- */
+
+@media screen and (min-width:330px) {
+
+  .footer-IllusionSeed-title{
+    left: 7vw;
+    font-size: 1.8rem;
+    bottom: 43px;
+  }
+  
+  .footer-social-button-list{
+    width: 100%;
+  }
+
+}
+
+/* ------------------------- MEDIA SCREEN 370 PX -------------------------- */
+
+@media screen and (min-width:370px) {
+
+  .footer-IllusionSeed-title{
+    left: 12.5vw;
+  }
+
+}
+
+/* ------------------------- MEDIA SCREEN 390 PX -------------------------- */
+
+@media screen and (min-width:390px) {
+
+  .footer-IllusionSeed-title{
+    left: 14vw;
+  }
+
+}
+
+/* ------------------------- MEDIA SCREEN 420 PX -------------------------- */
+
+@media screen and (min-width:420px) {
+
+  .footer-IllusionSeed-title{
+    left: 20vw;
+  }
+
+}
+
+  
+/* ------------------------- MEDIA SCREEN 460 PX -------------------------- */
+
+
+@media screen and (min-width:460px) {
+
+  /* ------------------------------- FOOTER BUTTON CONTAINER -------------------*/
+  
+  .footer-social-button-list{
+    width: 350px;
+    padding: 0;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-IllusionSeed-title{
+    left: 80px;
+  }
+  
+}
+
+/* ------------------------ MEDIA SCREEN 600 PX -------------------------- */
+
+@media screen and (min-width:600px) {
+
+  .footer-container{
+    z-index: 100;
     background: linear-gradient(145deg, #131313, #000000);
     height: 100px;
     width: 100%;
@@ -10,11 +143,12 @@
     position: fixed;
     left: 0;
     bottom: 0;
-    z-index: 100;
     flex-wrap: wrap;
     flex-direction: row;
   }
   
+  /* ------------------------- FOOTER TITLE CSS -----------------------------*/
+
   .footer-IllusionSeed-title{
     z-index: 100;
     position: fixed;
@@ -24,7 +158,7 @@
     left: 50px;
     bottom: 49px;
   }
-  
+
   .footer-IllusionSeed-title > a {
     text-decoration: none;
     color: #000000;
@@ -44,8 +178,11 @@
     bottom: 89px;
     transition: 1s cubic-bezier(0.075, 1, 0.065, 1);
   }
+
+  /* ------------------------------- FOOTER BUTTON CONTAINER -------------------*/
   
   .footer-social-button-list{
+    width: 350px;
     padding: 0;
     margin-bottom: 50px;
     margin-left: 5%;
@@ -54,3 +191,40 @@
     justify-content: space-between;
     align-items: center;
   }
+  
+}
+
+/* ------------------------ MEDIA SCREEN 720 PX -------------------------- */
+
+@media screen and (min-width:720px) {
+
+  /*-------------------------------  FOOTER NAV LIST CSS  -----------------------
+  --------------------------------------------------------------------*/
+
+  .footer-nav{
+    display: block;
+    position: fixed;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    bottom: -10px;
+    right: 20px;
+
+  }
+
+  .footer-nav-sitemap{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+
+  .footer-nav-sitemap > li > a {
+    margin: 15px 10px 15px;
+    text-decoration: none;
+    color: #fff;
+  }
+	
+}
