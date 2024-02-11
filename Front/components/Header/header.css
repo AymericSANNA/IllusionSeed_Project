@@ -1,11 +1,9 @@
-/* Main menu positionning */
-
 /* Burger Style: @see: https://codepen.io/CreativeJuiz/full/oMZNXy */
 
-/* ----------------------*/
+/* ----------------------- HEADER BAND -----------------------------*/
 .menu-container{
 	background: linear-gradient(145deg, #131313, #000000);
-	height: 100px;
+	height: 80px;
 	width: 100%;
 	margin: auto;
 	display: flex;
@@ -19,14 +17,17 @@
 	flex-direction: row;
 }  
 
+/*  -------------HEADER TITLE HAPPYSOUL ILLUSTRATE ----------------------*/
+
 .main-title{
 	z-index: 100;
 	position: fixed;
-	font-size: 2.5rem;
+	font-size: 1.3rem;
 	font-weight: 600;
 	text-align: center;
 	color: #ffffff;
-	left: 42vw;
+	left: 40vw;
+	top: 25px;
 }
 .main-title>a{
 	color: #ffffff;
@@ -38,15 +39,17 @@
 
 .main-title-separate{
 	position: fixed;
-	top: 70px;
+	top: 65px;
 	left: 43.5vw;
 }
 
+/* ---------------- MENU CSS -----------------------*/
+
 .open-main-nav {
 	position: absolute;
-	top: 30px;
+	top: 20px;
 	padding-top: 20px;
-	left: 50px;
+	left: 30px;
 	z-index: 2000;
 	background: none;
 	border: 0;
@@ -97,7 +100,7 @@
 	transform: translateY(-16px) skew(-10deg);
 }
 
-/* Toggle State part */
+/* ---------------------  Toggle State part ----------------------*/
 .is-open .burger {
 	transform: skew(5deg) translateY(-8px) rotate(-45deg);
 }
@@ -146,9 +149,10 @@
     visibility: visible;
 }
 
-/* Menu band effect */
+/* ---------------------- MENU BAND EFFECT ------------------------*/
+
 .main-nav::before {
-	 content: '';
+	content: '';
     position: absolute;
     top: 0;
     bottom: 0;
@@ -164,7 +168,8 @@
     transform: skew(-14deg) translateX(0);
 }
 
-/* Skewing effect on menu links */
+/* ---------------------- EFFECT MENU LINKS ---------------------------*/
+
 .main-nav ul {
     display: inline-flex;
     flex-direction: column;
@@ -181,7 +186,8 @@
     transform: skew(16deg);
 }
 
-/* Apparition effect on links */
+/* -------------------- APPARITION EFFECT ON LINKS --------------------*/
+
 .main-nav a {
     opacity: 0;
     transform: translateY(-10px);
@@ -213,13 +219,14 @@
 }
 
 /* Decoration */
+
 .main-nav ul,
 .main-nav li {
-    
 	list-style: none;
 	padding: 0;
     padding-top: 20px;
 }
+
 .main-nav a {
     margin-top: 25px;
 	display: block;
@@ -230,20 +237,55 @@
 	font-weight: bold;
 }
 
-/* ------------------------- MEDIA SCREEN 460 PX -------------------------- */
+/* ------------------------- MEDIA SCREEN 370 PX ---------------------------
+---------------------------------------------------------------------------- */
 
+@media screen and (min-width:370px) {
+
+	/*-------------------HEADER TITLE ILLUSTRATE PART ---------------------*/
+
+	.main-title-separate{
+		left: 42.5vw;
+	}
+
+}
+
+/* ------------------------- MEDIA SCREEN 460 PX ---------------------------
+---------------------------------------------------------------------------- */
 
 @media screen and (min-width:460px) {
+
 
 	.open-main-nav.is-open{
 		transform: translateX(70vw);
 	}
 
+	/*  -------------HEADER TITLE HAPPYSOUL ILLUSTRATE ----------------------*/
+
+	.main-title{
+		font-size: 1.5rem;
+		left: 42vw;
+	}
+
+	.main-title-separate{
+		left: 44.5vw;
+	}
+
+	/* -----------------BURGER MENU BUTTON ----------------------*/
+
+	.open-main-nav {
+		left: 50px;
+	}
 }
 
-/* ------------------------ MEDIA SCREEN 765 PX -------------------------- */
+/* ------------------------ MEDIA SCREEN 700 PX --------------------------
+-------------------------------------------------------------------------- */
 
 @media screen and (min-width:700px) {
+
+	.menu-container{
+		height: 100px;
+	}  
 
 	.main-nav {
 		width: 70%;
@@ -253,9 +295,42 @@
 		transform: translateX(50vw);
 	}
 
+	/*  -------------HEADER TITLE HAPPYSOUL ILLUSTRATE ----------------------*/
+
+	.main-title{
+		font-size: 2.5rem;
+		top: 0px;
+		left: 42vw;
+	}
+
+	/*-------------------HEADER TITLE ILLUSTRATE PART ---------------------*/
+
+	.main-title-separate{
+		top: 70px;
+		left: 45vw;
+	}
+
+	/* -----------------BURGER MENU BUTTON ----------------------*/
+
+	.open-main-nav {
+		top: 30px;
+	}
+
 }
 
-/* ------------------------ MEDIA SCREEN 1124 PX -------------------------- */
+/* ------------------------ MEDIA SCREEN 810 PX --------------------------
+-------------------------------------------------------------------------- */
+
+@media screen and (min-width:810px) {
+
+	/*-------------------HEADER TITLE ILLUSTRATE PART ---------------------*/
+	.main-title-separate{
+		left: 44.5vw;
+	}
+}
+
+/* ------------------------ MEDIA SCREEN 1000 PX --------------------------
+--------------------------------------------------------------------------- */
 
 @media screen and (min-width:1000px) {
 
@@ -267,9 +342,14 @@
 		transform: translateX(37vw);
 	}
 
+	.main-title-separate{
+		left: 44vw;
+	}
+
 }
 
-/* ------------------------ MEDIA SCREEN 1400 PX -------------------------- */
+/* ------------------------ MEDIA SCREEN 1400 PX -------------------------- 
+---------------------------------------------------------------------------*/
 
 @media screen and (min-width:1400px) {
 
@@ -279,6 +359,10 @@
 
 	.open-main-nav.is-open{
 		transform: translateX(22vw);
+	}
+
+	.main-title-separate{
+		left: 43vw;
 	}
 
 }
