@@ -1,13 +1,17 @@
-import React from 'react'
-import Image from 'next/image'
+"use client";
+import React, { useState } from "react";
 
-function Button(name, altImage) {
+function Button() {
+    const [info, setInfo] = useState(false);
+
     return (
-        <Image 
-            src={name}
-            width={70} 
-            height={70} 
-            alt={altImage} />
+       <div>
+        <button
+        className='show-info'
+        onClick={()=>{setInfo(!info)}}
+        >Info
+        </button>
+       </div>
     )
 }
 

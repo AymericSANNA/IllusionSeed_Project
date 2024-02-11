@@ -13,6 +13,8 @@
     margin-bottom: 50px;
 }
 
+/* ------------------------ SCROLL ANIMATION ---------------------*/
+
 @keyframes blurFadeIn {
     0% {
         transform: scale(0.3);
@@ -35,6 +37,44 @@
 
 .card-image{
     width: auto;
+    height: 350px;
+    overflow: hidden;
+    border: solid 2px #fff;
+    border-radius: 50px;
+}
+
+.card-text-container{
+    width: 261.5px;
+    height: 350px;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 23px;
+    border-radius: 50px;
+    border: solid 2px #fff;
+}
+
+.card-title{
+    margin-top: 40px;
+    margin-left: 15% ;
+    font-size: 18px;
+}
+
+.card-description{
+    width: 70%;
+    margin: auto;
+    margin-left: 17%;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* ------------------------- MEDIA SCREEN 370 PX ---------------------------
+---------------------------------------------------------------------------- */
+
+@media screen and (min-width:370px) {
+
+    
+.card-image{
+    width: auto;
     height: 700px;
     overflow: hidden;
     border: solid 2px #fff;
@@ -51,15 +91,97 @@
 }
 
 .card-title{
-
-margin-left: 15% ;
+    margin-left: 15% ;
 }
 
 .card-description{
-width: 60%;
-margin: auto;
-margin-left: 17%;
-margin-bottom: 30px;
+    width: 60%;
+    margin: auto;
+    margin-left: 17%;
+    margin-bottom: 30px;
+}
 }
 
+/* ------------------------- MEDIA SCREEN 460 PX ---------------------------
+---------------------------------------------------------------------------- */
 
+@media screen and (min-width:460px) {
+}
+
+/* ------------------------ MEDIA SCREEN 700 PX --------------------------
+-------------------------------------------------------------------------- */
+
+@media screen and (min-width:700px) {
+
+}
+
+/* ------------------------ MEDIA SCREEN 1000 PX --------------------------
+--------------------------------------------------------------------------- */
+
+@media screen and (min-width:1000px) {
+
+    
+.card-image{
+    width: auto;
+    height: 700px;
+    overflow: hidden;
+    border: solid 2px #fff;
+    border-radius: 50px;
+}
+
+.card-text-container{
+    width: 80%;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    
+    bottom: 30px;
+    border-radius: 15px;
+}
+
+.card-title{
+    margin-left: 15% ;
+}
+
+.card-description{
+    width: 60%;
+    margin: auto;
+    margin-left: 17%;
+    margin-bottom: 30px;
+}
+
+}
+
+/* ------------------------ MEDIA SCREEN 1400 PX -------------------------- 
+---------------------------------------------------------------------------*/
+
+@media screen and (min-width:1400px) {
+
+    
+.card-image{
+    width: auto;
+    height: 700px;
+    overflow: hidden;
+    border: solid 2px #fff;
+    border-radius: 50px;
+}
+
+.card-text-container{
+    width: 80%;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    
+    bottom: 30px;
+    border-radius: 15px;
+}
+
+.card-title{
+    margin-left: 15% ;
+}
+
+.card-description{
+    width: 60%;
+    margin: auto;
+    margin-left: 17%;
+    margin-bottom: 30px;
+}
+}
