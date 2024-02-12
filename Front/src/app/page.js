@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import NavMobile from '../../components/Nav/NavMobile'
+
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
 
       <div className={styles.center}>
 
-        <p> IllusionSeed </p>
+        <p> HappySoul Illustrate </p>
       </div>
     </main>
   )

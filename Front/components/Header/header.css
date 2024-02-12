@@ -1,0 +1,369 @@
+/* Burger Style: @see: https://codepen.io/CreativeJuiz/full/oMZNXy */
+
+/* ----------------------- HEADER BAND -----------------------------*/
+.menu-container{
+	background: linear-gradient(145deg, #131313, #000000);
+	height: 80px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	flex-wrap: wrap;
+	flex-direction: row;
+}  
+
+/*  -------------HEADER TITLE HAPPYSOUL ILLUSTRATE ----------------------*/
+
+.main-title{
+	z-index: 100;
+	position: fixed;
+	font-size: 1.3rem;
+	font-weight: 600;
+	text-align: center;
+	color: #ffffff;
+	left: 40vw;
+	top: 25px;
+}
+.main-title>a{
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: 0 0 30px #89ffff,
+	0 0 10px #89ffff;;
+  	-webkit-text-stroke: 0.5px #89ffff;
+}
+
+.main-title-separate{
+	position: fixed;
+	top: 65px;
+	left: 43.5vw;
+}
+
+/* ---------------- MENU CSS -----------------------*/
+
+.open-main-nav {
+	position: absolute;
+	top: 20px;
+	padding-top: 20px;
+	left: 30px;
+	z-index: 2000;
+	background: none;
+	border: 0;
+	cursor: pointer;
+}
+
+.open-main-nav:hover{
+	text-shadow: 0 0 30px #89ffff;
+	-webkit-text-stroke: 0.7px #78ffff;
+}
+
+.open-main-nav.is-open{
+	transform: translateX(70vw);
+	transition: all 275ms 100ms;
+	text-shadow: 0 0 30px #89ffff;
+	-webkit-text-stroke: 0.7px #78ffff;
+}
+
+.open-main-nav:focus {
+	outline: none;
+}
+
+.burger {
+	position: relative;
+	display: block;
+	width: 28px;
+	height: 4px;
+	margin: 0 auto;
+	background: #ffffff;
+	transform: skew(5deg);
+	transition: all .275s;
+}
+
+.burger:after,
+.burger:before {
+	content: '';
+	display: block;
+	height: 100%;
+	background: #ffffff;
+	transition: all .275s;
+}
+
+.burger:after {
+	transform: translateY(-12px) translateX(-2px) skew(-20deg);
+}
+
+.burger:before {
+	transform: translateY(-16px) skew(-10deg);
+}
+
+/* ---------------------  Toggle State part ----------------------*/
+.is-open .burger {
+	transform: skew(5deg) translateY(-8px) rotate(-45deg);
+}
+
+.is-open .burger:before {
+	transform: translateY(0px) skew(-10deg) rotate(75deg);
+}
+
+.is-open .burger:after {
+	transform: translateY(-12px) translateX(10px) skew(-20deg);
+    opacity: 0;
+}
+
+/* ---------------------- BURGER TEXT PART ------------------------------- */
+
+.burger-text {
+	display: block;
+	font-size: .675rem;
+	letter-spacing: .05em;
+	margin-top: .5em;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: center;
+	color: #ffffff;
+}
+
+/* --------------------------- MENU PART ----------------*/
+.main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background: #5c5c5c;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: all .375s;
+}
+
+.main-nav.is-open {
+    opacity: 1;
+    z-index: 1000;
+	background-color: transparent;
+    visibility: visible;
+}
+
+/* ---------------------- MENU BAND EFFECT ------------------------*/
+
+.main-nav::before {
+	content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -15px;
+    background: linear-gradient(145deg, #131313, #000000);
+    transform-origin: 0 0;
+    transform: skew(-14deg) translateX(-120%);
+    transition: all .275s .1s;
+}
+
+.main-nav.is-open::before {
+    transform: skew(-14deg) translateX(0);
+}
+
+/* ---------------------- EFFECT MENU LINKS ---------------------------*/
+
+.main-nav ul {
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    transform: translateX(-18%) skew(-16deg);
+}
+
+.main-nav li {
+    display: block;
+    margin: .5rem 0;
+    text-align: right;
+    transform: skew(16deg);
+}
+
+/* -------------------- APPARITION EFFECT ON LINKS --------------------*/
+
+.main-nav a {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.main-nav.is-open a {
+    opacity: 1;
+    transform: translateY(0);
+}
+.main-nav li:nth-child(1) a {
+	transition: all 275ms 175ms
+}
+.main-nav li:nth-child(2) a {
+	transition: all 275ms 225ms
+}
+.main-nav li:nth-child(3) a {
+	transition: all 275ms 275ms
+}
+.main-nav li:nth-child(4) a {
+	transition: all 275ms 325ms
+}
+/* .main-nav li:nth-child(5) a {
+	transition: all 275ms 375ms
+} */
+
+.main-nav.is-open a:hover {
+	text-shadow: 0 0 30px #89ffff;
+  -webkit-text-stroke: 0.7px #4affff;
+}
+
+/* Decoration */
+
+.main-nav ul,
+.main-nav li {
+	list-style: none;
+	padding: 0;
+    padding-top: 20px;
+}
+
+.main-nav a {
+    margin-top: 25px;
+	display: block;
+	padding: 12px 0;
+	color: #ffffff;
+	font-size: 1.4em;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* ------------------------- MEDIA SCREEN 370 PX ---------------------------
+---------------------------------------------------------------------------- */
+
+@media screen and (min-width:370px) {
+
+	/*-------------------HEADER TITLE ILLUSTRATE PART ---------------------*/
+
+	.main-title-separate{
+		left: 42.5vw;
+	}
+
+}
+
+/* ------------------------- MEDIA SCREEN 460 PX ---------------------------
+---------------------------------------------------------------------------- */
+
+@media screen and (min-width:460px) {
+
+
+	.open-main-nav.is-open{
+		transform: translateX(70vw);
+	}
+
+	/*  -------------HEADER TITLE HAPPYSOUL ILLUSTRATE ----------------------*/
+
+	.main-title{
+		font-size: 1.5rem;
+		left: 42vw;
+	}
+
+	.main-title-separate{
+		left: 44.5vw;
+	}
+
+	/* -----------------BURGER MENU BUTTON ----------------------*/
+
+	.open-main-nav {
+		left: 50px;
+	}
+}
+
+/* ------------------------ MEDIA SCREEN 700 PX --------------------------
+-------------------------------------------------------------------------- */
+
+@media screen and (min-width:700px) {
+
+	.menu-container{
+		height: 100px;
+	}  
+
+	.main-nav {
+		width: 70%;
+	}	
+
+	.open-main-nav.is-open{
+		transform: translateX(50vw);
+	}
+
+	/*  -------------HEADER TITLE HAPPYSOUL ILLUSTRATE ----------------------*/
+
+	.main-title{
+		font-size: 2.5rem;
+		top: 0px;
+		left: 42vw;
+	}
+
+	/*-------------------HEADER TITLE ILLUSTRATE PART ---------------------*/
+
+	.main-title-separate{
+		top: 70px;
+		left: 45vw;
+	}
+
+	/* -----------------BURGER MENU BUTTON ----------------------*/
+
+	.open-main-nav {
+		top: 30px;
+	}
+
+}
+
+/* ------------------------ MEDIA SCREEN 810 PX --------------------------
+-------------------------------------------------------------------------- */
+
+@media screen and (min-width:810px) {
+
+	/*-------------------HEADER TITLE ILLUSTRATE PART ---------------------*/
+	.main-title-separate{
+		left: 44.5vw;
+	}
+}
+
+/* ------------------------ MEDIA SCREEN 1000 PX --------------------------
+--------------------------------------------------------------------------- */
+
+@media screen and (min-width:1000px) {
+
+	.main-nav {
+		width: 50%;
+	}	
+
+	.open-main-nav.is-open{
+		transform: translateX(37vw);
+	}
+
+	.main-title-separate{
+		left: 44vw;
+	}
+
+}
+
+/* ------------------------ MEDIA SCREEN 1400 PX -------------------------- 
+---------------------------------------------------------------------------*/
+
+@media screen and (min-width:1400px) {
+
+	.main-nav {
+		width: 30%;
+	}	
+
+	.open-main-nav.is-open{
+		transform: translateX(22vw);
+	}
+
+	.main-title-separate{
+		left: 43vw;
+	}
+
+}
+

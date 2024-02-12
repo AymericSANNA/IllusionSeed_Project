@@ -1,16 +1,22 @@
+
 import Image from 'next/image'
-import React from 'react'
+import React from "react";
+import './imageCard.css'
+import CardDescription from '../CardDescription/CardDescription'
 
 function imageCard(name, altImage, title, description) {
+
     return (
-        <div>
+        <div className='card-container'>
             <Image 
-                    src={name}
-                    width={300} 
-                    height={400} 
-                    alt={altImage}/>
-            <h3>{title}</h3>
-            <p>{description}</p>
+                className='card-image'
+                src={name}
+                width={300} 
+                height={400} 
+                alt={altImage}
+            />
+            {CardDescription(title, description)}
+            
         </div>
     )
 }
