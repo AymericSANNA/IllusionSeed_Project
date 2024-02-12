@@ -1,10 +1,11 @@
 
 import Image from 'next/image'
-import React from 'react'
+import React from "react";
 import './imageCard.css'
-import Button from '../Buttons/Button'
+import CardDescription from '../CardDescription/CardDescription'
 
 function imageCard(name, altImage, title, description) {
+
     return (
         <div className='card-container'>
             <Image 
@@ -14,11 +15,8 @@ function imageCard(name, altImage, title, description) {
                 height={400} 
                 alt={altImage}
             />
-            <Button/>
-            <div className='card-text-container'>
-                <h3 className='card-title'>{title}</h3>
-                <p className='card-description'>{description}</p>
-            </div>
+            {CardDescription(title, description)}
+            
         </div>
     )
 }

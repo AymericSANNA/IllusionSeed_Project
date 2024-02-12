@@ -1,8 +1,8 @@
 
+"use client"
 import React from 'react';
-import Button from '../../../components/Buttons/Button';
 import ImageCard from '../../../components/ImageCards/ImageCard';
-import Arrow from './../Images/logo_arrow.png'
+import CardDescription from '../../../components/CardDescription/CardDescription'
 import Peaky from './../Images/Peaky.jpg'
 import Medal from './../Images/Medal.jpg'
 import Dodge from './../Images/Dodge.jpg'
@@ -27,7 +27,7 @@ const GalleryPage = () => {
                     "Peaky Blinders actor drawing",
                     "Peaky Blinders ",
                     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, eius blanditiis? Perferendis ipsa, id quod voluptates quas necessitatibus doloremque. Error sit inventore sapiente harum eos veniam quisquam quis, maxime, alias illo repellat officiis"
-                    )}
+                     )}
 
                     {ImageCard
                     (Medal,
