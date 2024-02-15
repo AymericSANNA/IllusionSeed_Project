@@ -51,7 +51,7 @@
 .show-info{
     position: absolute;
     bottom: -25px;
-    left: 75px;
+    left: calc(50% - 25px);
     width: 50px;
     height: 50px;
     background: rgba(0,0,0,0.7);

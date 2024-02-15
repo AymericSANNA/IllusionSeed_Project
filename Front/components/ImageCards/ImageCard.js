@@ -16,8 +16,8 @@ function imageCard(name, altImage, title, description) {
                 alt={altImage}
             />
             {CardDescription(title, description)}
-            
         </div>
+            
     )
 }
 

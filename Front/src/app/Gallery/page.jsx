@@ -28,6 +28,7 @@ const GalleryPage = () => {
                     "Peaky Blinders ",
                     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, eius blanditiis? Perferendis ipsa, id quod voluptates quas necessitatibus doloremque. Error sit inventore sapiente harum eos veniam quisquam quis, maxime, alias illo repellat officiis"
                      )}
+                     
 
                     {ImageCard
                     (Medal,
